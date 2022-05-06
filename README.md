@@ -1,2 +1,4 @@
 # ignat.fi
-ignat.fi site
+Sources for https://ignat.fi site.
+
+The site is generated with Jakyll.
