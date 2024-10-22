@@ -1,8 +1,8 @@
 # The URL the site will be built for
 base_url = "https://ignat.fi"
 
-title="Ignat Kudriavtsev"
-description="Ignat Kudriavtsev homepage."
+title = "Ignat Kudriavtsev"
+description = "Ignat Kudriavtsev homepage."
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -11,7 +11,7 @@ compile_sass = true
 minify_html = false
 
 # When set to "true", a feed is automatically generated.
-generate_feed = false
+generate_feeds = false
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
@@ -22,18 +22,18 @@ build_search_index = false
 highlight_code = false
 
 [extra]
-your_name="Ignat Kudriavtsev"
-your_title="Backend Engineer"
-your_organisation="Posti"
-your_country="Finland"
+your_name = "Ignat Kudriavtsev"
+your_title = "Backend Engineer"
+your_organisation = "Posti"
+your_country = "Finland"
 
 [extra.social]
-email_url="mailto:ignat@ignat.fi"
-facebook_url="https://www.facebook.com/iVerner/"
-github_url="https://github.com/iVerner"
-vk_url="https://vk.com/verner"
-instagram_url="https://www.instagram.com/iverner/"
-linkedin_url="https://www.linkedin.com/in/iverner/"
-twitter_url="https://twitter.com/Verner"
-youtube_url="https://www.youtube.com/@iverner"
-telegram_url="https://t.me/Verner"
+email_url = "mailto:ignat@ignat.fi"
+facebook_url = "https://www.facebook.com/iVerner/"
+github_url = "https://github.com/iVerner"
+vk_url = "https://vk.com/verner"
+instagram_url = "https://www.instagram.com/iverner/"
+linkedin_url = "https://www.linkedin.com/in/iverner/"
+twitter_url = "https://twitter.com/Verner"
+youtube_url = "https://www.youtube.com/@iverner"
+telegram_url = "https://t.me/Verner"
