@@ -4,7 +4,8 @@
 @import 'libs/vendor';
 @import 'libs/breakpoints';
 @import url("source-sans-pro.css");
-@import url("fontawesome-all.min.css");
+@import url("font-awesome-brands.css");
+@import url("font-awesome-solid.css");
 
 /*
 	Aerial by HTML5 UP
@@ -271,7 +272,7 @@ a {
 
 	&.brands {
 		&:before {
-			font-family: 'Font Awesome 5 Brands';
+			font-family: 'Font Awesome 6 Brands';
 		}
 	}
 }
