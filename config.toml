@@ -2,13 +2,13 @@
 base_url = "https://ignat.fi"
 
 title = "Ignat Kudriavtsev"
-description = "Ignat Kudriavtsev homepage."
+description = "Ignat Kudriavtsev is a backend engineer at Posti in Helsinki, Finland."
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
 # When set to "true", the generated HTML files are minified.
-minify_html = true
+minify_html = false
 
 # When set to "true", a feed is automatically generated.
 generate_feeds = false
@@ -22,18 +22,100 @@ build_search_index = false
 highlight_code = false
 
 [extra]
+language = "en"
 your_name = "Ignat Kudriavtsev"
+your_tagline = "Backend Engineer at Posti"
+your_location = "Helsinki, Finland"
 your_title = "Backend Engineer"
 your_organisation = "Posti"
 your_country = "Finland"
+your_city = "Helsinki"
+your_country_code = "FI"
+email = "ignat@ignat.fi"
+og_image = "og-image.jpg"
+og_type = "website"
+twitter_card = "summary_large_image"
+design_name = "HTML5 UP"
+design_url = "http://html5up.net"
+same_as = [
+	"https://www.linkedin.com/in/iverner/",
+	"https://github.com/iVerner",
+	"https://t.me/Verner",
+	"https://www.instagram.com/iverner/",
+	"https://www.facebook.com/iVerner/",
+	"https://vk.com/verner",
+	"https://x.com/Verner",
+	"https://www.youtube.com/@iverner",
+]
 
-[extra.social]
-email_url = "mailto:ignat@ignat.fi"
-facebook_url = "https://www.facebook.com/iVerner/"
-github_url = "https://github.com/iVerner"
-vk_url = "https://vk.com/verner"
-instagram_url = "https://www.instagram.com/iverner/"
-linkedin_url = "https://www.linkedin.com/in/iverner/"
-x_url = "https://x.com/Verner"
-youtube_url = "https://www.youtube.com/@iverner"
-telegram_url = "https://t.me/Verner"
+[[extra.social_links]]
+group = "primary"
+url = "mailto:ignat@ignat.fi"
+aria_label = "Send e-mail"
+label = "Email"
+icon_class = "icon solid fa-envelope"
+rel_me = false
+
+[[extra.social_links]]
+group = "primary"
+url = "https://www.linkedin.com/in/iverner/"
+aria_label = "LinkedIn page"
+label = "LinkedIn"
+icon_class = "icon brands fa-linkedin-in"
+rel_me = true
+
+[[extra.social_links]]
+group = "primary"
+url = "https://github.com/iVerner"
+aria_label = "GitHub page"
+label = "GitHub"
+icon_class = "icon brands fa-github"
+rel_me = true
+
+[[extra.social_links]]
+group = "primary"
+url = "https://t.me/Verner"
+aria_label = "Telegram page"
+label = "Telegram"
+icon_class = "icon brands fa-telegram"
+rel_me = true
+
+[[extra.social_links]]
+group = "primary"
+url = "https://www.instagram.com/iverner/"
+aria_label = "Instagram page"
+label = "Instagram"
+icon_class = "icon brands fa-instagram"
+rel_me = true
+
+[[extra.social_links]]
+group = "secondary"
+url = "https://www.facebook.com/iVerner/"
+aria_label = "Facebook page"
+label = "Facebook"
+icon_class = "icon brands fa-facebook-f"
+rel_me = true
+
+[[extra.social_links]]
+group = "secondary"
+url = "https://vk.com/verner"
+aria_label = "VK page"
+label = "VK"
+icon_class = "icon brands fa-vk"
+rel_me = true
+
+[[extra.social_links]]
+group = "secondary"
+url = "https://x.com/Verner"
+aria_label = "X page"
+label = "X"
+icon_class = "icon brands fa-x-twitter"
+rel_me = true
+
+[[extra.social_links]]
+group = "secondary"
+url = "https://www.youtube.com/@iverner"
+aria_label = "YouTube page"
+label = "YouTube"
+icon_class = "icon brands fa-youtube"
+rel_me = true

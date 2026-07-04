@@ -1,20 +1,13 @@
 <!DOCTYPE HTML>
-<!--
-	Aerial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html lang="en">
-
-{% include "head.html" %}
-
+<html lang="{{ config.extra.language }}">
+{% include "head.html" -%}
 <body class="is-preload">
 	<div id="wrapper">
 		<div id="bg"></div>
 		<div id="overlay"></div>
 		<div id="main">
-			{% include "header.html" %}
-			{% include "footer.html" %}
+			{% include "header.html" -%}
+			{% include "footer.html" -%}
 		</div>
 	</div>
 	<script>
@@ -23,5 +16,4 @@
 		window.onorientationchange = function () { document.body.scrollTop = 0; }
 	</script>
 </body>
-
 </html>

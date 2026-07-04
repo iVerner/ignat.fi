@@ -45,6 +45,9 @@ $delay-overlay: $delay-wrapper - 0.5s;
 $delay-header: $delay-overlay + _duration(overlay) - 0.75s;
 $delay-nav-icons: $delay-header + _duration(header) - 1s;
 $delay-nav-icon: 0.25s;
+$primary-nav-icon-count: 5;
+$nav-icon-animation-steps: 2;
+$secondary-nav-icon-delay-offset: $primary-nav-icon-count + $nav-icon-animation-steps - 1;
 
 // Reset.
 // Based on meyerweb.com/eric/tools/css/reset (v2.0 | 20110126 | License: public domain)
@@ -422,6 +425,10 @@ a {
 	nav {
 		margin: 1.5em 0 0 0;
 
+		ul {
+			white-space: nowrap;
+		}
+
 		li {
 			@include vendor('animation', 'nav-icons #{_duration(nav-icons)} ease-in-out forwards');
 			@include vendor('backface-visibility', 'hidden');
@@ -482,6 +489,37 @@ a {
 
 			span {
 				display: none;
+			}
+		}
+
+		.secondary-links {
+			margin-top: 0.15em;
+
+			li {
+				height: 3.1em;
+				line-height: 3.1em;
+				width: 3.1em;
+
+				@for $x from 1 through 4 {
+					&:nth-child(#{$x}) {
+						@include vendor('animation-delay', ($delay-nav-icons + (($x + $secondary-nav-icon-delay-offset) * $delay-nav-icon)) + '');
+					}
+				}
+			}
+
+			a {
+				opacity: 0.62;
+
+				&:before {
+					font-size: 1.05em;
+					height: 2.35em;
+					line-height: 2.35em;
+					width: 2.35em;
+				}
+
+				&:hover {
+					opacity: 1;
+				}
 			}
 		}
 	}
@@ -601,6 +639,25 @@ a {
 	#header {
 		nav {
 			padding: 0 1em;
+
+			ul {
+				white-space: normal;
+			}
+
+			.primary-links {
+				margin: 0 auto;
+				max-width: 17em;
+			}
+
+			.secondary-links {
+				margin-top: 0.35em;
+
+				li {
+					height: 2.75em;
+					line-height: 2.75em;
+					width: 2.75em;
+				}
+			}
 		}
 	}
 
