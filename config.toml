@@ -1,8 +1,8 @@
 # The URL the site will be built for
 base_url = "https://ignat.fi"
 
-title = "Ignat Kudriavtsev"
-description = "Ignat Kudriavtsev is a backend engineer at Posti in Helsinki, Finland."
+title = "Ignat Kudriavtsev - Backend Engineer at Posti, Helsinki"
+description = "Ignat Kudriavtsev is a backend engineer at Posti in Helsinki, Finland. Connect via LinkedIn, GitHub, Telegram, or email to get in touch or collaborate."
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
